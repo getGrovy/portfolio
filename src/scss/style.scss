@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// setting 
+@import "setting/fonst.scss";
+@import "setting/base.scss";
+@import "setting/mixins.scss";
+
+//commons
+@import "common/common.scss";
+
+// inner
+@import "layout/header.scss";
+@import "layout/main.scss";
+@import "section/sec1.scss";
+@import "section/sec2.scss";
+@import "section/sec3.scss";
+@import "section/sec4.scss";
+@import "section/sec5.scss";
+@import "section/sec6.scss";
+@import "section/sec7.scss";
+@import "section/sec8.scss";
+@import "section/sec9.scss";
+// @import "layout/img.scss";
+// @import "layout/text.scss";
+// @import "layout/youtube";
+// @import "layout/unsplash";
+// @import "layout/movi";
+// @import "layout/review";
+// @import "layout/footer";

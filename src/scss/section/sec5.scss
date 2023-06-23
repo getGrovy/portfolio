@@ -1,0 +1,166 @@
+#section5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #BDA67E ;
+    display: flex;
+    flex-wrap: wrap;
+    .line{
+        position: absolute;
+        width: 100%;
+        height: 35px;
+        left: -48.6979vw;
+        background: #000000;
+        z-index: 500;
+        transform: rotate(90deg);
+        p{
+            // margin-top: -1.685vw;
+            // min-width: 100%;
+            color: #fff;
+            transform: rotate(180deg);
+            font-size: 1.875rem;
+            font-family: 'PPRightSans-Light';
+            z-index: 500;
+        }
+    }
+    .circle{
+        position: absolute;
+        width: 10.416vw;
+        height: 10.416vw;
+        left: -3.33vw;
+        transform: translate(-10%, -30%);
+        background-color: #000;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    .scrollBtn{
+        position: absolute;
+        left: 2vw;
+        top:3.2vw;
+        color: #FFF;
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 4000;
+    }
+    .circle::after{
+        content: '';
+        position: absolute;
+        width: 12.6625vw;
+        height: 12.6625vw;
+        left: 0.13vw;
+        top: 2.63vw;
+        border-radius: 50%;
+        transform: translate(-10%, -30%);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2000;
+
+    }
+    .line::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: -15px;
+        background: #000000;
+        // transform: rotate(90deg);
+        z-index: 10000;
+    }
+    .site{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        .title{
+            position: absolute;
+            left: 100px;
+            width:  20%;
+            transform: rotate(270deg);
+            display: flex;
+            align-items: center;
+            h2{
+                width: 50%;
+                font-family: 'PPRightSans-TightMedium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 300px;
+                line-height: 343px;
+                /* identical to box height */
+                text-align: center;
+                color: #000000;
+            }
+            .border{
+                width: 50%;
+                height: 3px;
+                text-align: center;
+                background-color: #000000;
+                
+            }
+        }
+        .cont{
+            margin-top: 4%;
+            width: 100%;
+            margin-left: 25%;
+            height: 100%;
+            // display: flex;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            .mainImg{
+                max-width: 1184px;;
+                max-height: 504px;;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+            }
+            .desc{
+                position: relative;
+                width:100%;
+                margin-top: 2%;
+                
+                h2{
+                    color: #000;
+                    font-size: 50px;
+                    font-family: "PPRightSans-CompactDark";
+                    font-weight: 800;
+                    line-height: 106%;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: "GmarketSans";
+                    font-size: 16px;
+                    text-align: left;
+                    padding-top: 5px;
+                }
+                p:nth-child(2){margin-top: 20px;}
+                img{
+                    position: absolute;
+                    bottom: 30%;
+                    right: 10%;
+                    max-width: 500px;
+
+                }
+                .link{
+                    display: flex;
+                    // justify-content: center;
+                    width: 100%;
+                    margin-top: 30px;
+                    a{
+                        width: 15.7%;
+                    }
+                    a:nth-child(1){
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

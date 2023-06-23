@@ -1,0 +1,78 @@
+#section7{
+    position: relative;
+    width: calc(100% + 1px);
+    margin-left: -1px;
+    height: 100vh;
+    background-color: #BDA67E ;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .site{
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        
+        .cont{
+            margin-top: 5%;
+            width: 100%;
+            
+            height: 100%;
+            // display: flex;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            .mainImg{
+                max-width: 1184px;;
+                max-height: 504px;;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+            }
+            .desc{
+                position: relative;
+                width:100%;
+                margin-top: 2%;
+                
+                h2{
+                    color: #000;
+                    font-size: 50px;
+                    font-family: "PPRightSans-CompactDark";
+                    font-weight: 800;
+                    line-height: 106%;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: "GmarketSans";
+                    font-size: 16px;
+                    text-align: left;
+                    padding-top: 5px;
+                }
+                p:nth-child(2){margin-top: 20px;}
+                img{
+                    position: absolute;
+                    bottom: 30%;
+                    right: 10%;
+                    max-width: 500px;
+
+                }
+                .link{
+                    display: flex;
+                    // justify-content: center;
+                    width: 100%;
+                    margin-top: 30px;
+                    a{
+                        width: 15.7%;
+                    }
+                    a:nth-child(1){
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

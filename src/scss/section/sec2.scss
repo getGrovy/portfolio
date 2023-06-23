@@ -1,0 +1,133 @@
+#section2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #D8C9AF 30%, #CCBDA3 50%);
+    display: flex;
+    flex-wrap: wrap;
+    .line{
+        position: relative;
+        width: 100%;
+        height: 35px;
+        left: -48.6979vw;
+        background: #000000;
+        z-index: 500;
+        transform: rotate(90deg);
+        p{
+            // margin-top: -1.685vw;
+            // min-width: 100%;
+            color: #fff;
+            transform: rotate(180deg);
+            font-size: 1.875rem;
+            font-family: 'PPRightSans-Light';
+            z-index: 500;
+        }
+    }
+    .circle{
+        position: absolute;
+        width: 10.416vw;
+        height: 10.416vw;
+        left: -3.33vw;
+        transform: translate(-10%, -30%);
+        background-color: #000;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    .scrollBtn{
+        position: absolute;
+        left: 1.9vw;
+        top:3.2vw;
+        color: #FFF;
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 4000;
+    }
+    .circle::after{
+        content: '';
+        position: absolute;
+        width: 12.6625vw;
+        height: 12.6625vw;
+        left: 0.13vw;
+        top: 2.63vw;
+        border-radius: 50%;
+        transform: translate(-10%, -30%);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2000;
+
+    }
+    .line::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: -15px;
+        background: #000000;
+        // transform: rotate(90deg);
+        z-index: 10000;
+    }
+    .myInfo{
+        width: 100%;
+        height: 108vh;
+        margin-top: -80px;
+        display: flex;
+
+        .img{
+            margin-left: 200px;
+            width: 35%;
+            height: 108vh;
+            background-image: url('../../img/profile.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            mix-blend-mode: luminosity;
+        }
+        .desc{width: 62%;
+            // background-color: #aaa;
+
+            .eng{
+                margin-left: 40px;
+                margin-top: 100px;
+                h2{
+                    margin-bottom: 65px;
+                    font-family: 'PPRightSans-TightMedium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 80px;
+                    line-height: 91px;
+                    text-align: left;
+
+                }
+                span{
+                    margin-left: 40px;
+                    margin-bottom: 20px;
+                    font-family: 'PPRightSans-TightMedium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 60px;
+                    line-height: 59px;
+                    text-align: left;
+                }
+            }
+            .kor{
+                margin-left: 120px;
+                margin-top: 100px;
+
+                span{
+                    font-family: 'NexonLv1Gothic';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 143.7%;
+                    text-align: left;
+                    text-align: justify;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+.section.center{
+    text-align: center;
+}
+.section{
+    padding: 120px 0;
+    
+    > h3 {
+        font-size: 50px;
+    }
+    > p {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+    
+}
+
+.btnStyle{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    // margin: 5em auto;
+    font-size: 1.2em;
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.btnStyle1{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    // margin: 5em auto;
+    font-size: 1.2em;
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.bg-blue{
+    background-color: var(--bg_section);
+}
+// blind
+.blind {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+// ir
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 5px;
+}
+#skip {
+    position: relative;
+    z-index: 100000;
+}
+#skip a {
+    background: var(--color_body);
+    color: #fff;
+    position: absolute;
+    padding: 20px 40px;
+    left: -400px;
+    top: 5px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 5px;
+}
+$interval : (
+    0: 0,
+    10: 10px,
+    20: 20px,
+    30: 30px,
+    40: 40px,
+    50: 50px,
+    60: 60px,
+    70: 70px,
+    80: 80px,
+    90: 90px,
+);
+
+@each $value, $size in $interval{
+    .mb#{$value}{
+        margin-bottom: $size !important;
+    }
+}
+
+@each $value, $size in $interval{
+    .mt#{$value}{
+        margin-top: $size !important;
+    }
+}
+@each $value, $size in $interval{
+    .ml#{$value}{
+        margin-left: $size !important;
+    }
+}
+@each $value, $size in $interval{
+    .mr#{$value}{
+        margin-right: $size !important;
+    }
+}
